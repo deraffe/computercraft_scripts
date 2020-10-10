@@ -22,7 +22,7 @@ end
 height = 0
 
 -- climb tree
-while detectBlock("minecraft:spruce_log") do
+while t.detectBlock("minecraft:spruce_log") do
     t.tryUp()
     height = height + 1
 end
@@ -38,7 +38,7 @@ t.tryForward()
 turtle.turnLeft()
 t.tryForward()
 turtle.turnLeft()
-while detectBlock({"minecraft:spruce_log", "minecraft:spruce_leaves"}, "down") do
+while t.detectBlock({"minecraft:spruce_log", "minecraft:spruce_leaves"}, "down") do
     t.tryDown()
     t.tryForward()
     t.tryForward()
