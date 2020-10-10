@@ -41,7 +41,6 @@ turtle.turnLeft()
 while t.detectBlock({"minecraft:spruce_log", "minecraft:spruce_leaves"}, "down") do
     t.tryDown()
     t.tryForward()
-    t.tryForward()
     turtle.turnLeft()
     t.tryForward()
     turtle.turnLeft()
