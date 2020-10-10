@@ -223,7 +223,7 @@ local function detectBlock(name, direction)
         return ret and data.name == name
     elseif type(name) == "table" then
         local matches = false
-        for block in name do
+        for i, block in ipairs(name) do
             if data.name == block then
                 matches = true
             end
