@@ -233,3 +233,16 @@ local function detectBlock(name, direction)
         return nil, "Unsupported name argument"
     end
 end
+
+return {
+    collected = collected,
+    tryUp = tryUp,
+    tryDown = tryDown,
+    tryForward = tryForward,
+    turnAround = turnAround,
+    findItem = findItem,
+    tryPlaceTorchBehind = tryPlaceTorchBehind,
+    fixLavaAndWater = fixLavaAndWater,
+    error = error,
+    detectBlock = detectBlock,
+}
